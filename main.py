@@ -92,6 +92,7 @@ class SearchSolution:
                 #pick a random queen and move it to min conflict place and recalculate
                 # Repeat until max steps or goal true, whichever comes first
                 #print solution
+                pass
 
 
     @staticmethod
