@@ -171,7 +171,7 @@ class SearchSolution:
         for j in range(size):
             while True:
                 try:
-                    i = int(input(f"Enter Location of Queen in Column {j + 1}:({1} - {size}) : "))
+                    i = int(input(f"Enter Location (Row number) of Queen in Column {j + 1}:({1} - {size}) : "))
                     if 0 <= i - 1 < size:
                         board.config[i - 1][j] = 'x'
                         break
