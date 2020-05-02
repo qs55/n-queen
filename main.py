@@ -1,7 +1,11 @@
+# Name: Qaisar Shabbir
+# WSUid: F354X254
+
 import numpy as np
 import random
 import sys
 
+MAX_STEPS = 50000
 
 class Board:
     def __init__(self, size=4):
@@ -55,7 +59,7 @@ class Board:
         else:
             print()
             print("---------------------------------------------------------------------------------------------------")
-            print("Solution could not be found in defined limit. Max steps used = 1000")
+            print(f"Solution could not be found in defined limit. Max steps used = {MAX_STEPS}")
             print("---------------------------------------------------------------------------------------------------")
 
     def find_min_column(self, row, col):
@@ -186,5 +190,5 @@ class SearchSolution:
 
 
 class Main:
-    ss = SearchSolution(1000)
+    ss = SearchSolution(MAX_STEPS)
     ss.initialize_game()
